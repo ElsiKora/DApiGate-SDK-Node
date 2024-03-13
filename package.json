@@ -1,0 +1,32 @@
+{
+  "name": "@elsikora/ecorpay-sdk",
+  "version": "1.0.9",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElsiKora/Ecorpay-SDK-Node.git",
+    "directory": "main"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "blakejs": "^1.2.1",
+    "crypto": "^1.0.1",
+    "jssha": "^3.3.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@elsikora/ecorpay-types": "^1.0.12",
+    "@types/node": "^20.10.4"
+  }
+}
