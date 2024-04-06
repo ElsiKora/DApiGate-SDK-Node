@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@elsikora/eslint-config": "^2.1.2",
-    "@types/node": "^20.12.5",
     "typescript": "^5.4.4"
   },
   "description": "Node SDK for DApiGate",
