@@ -23,7 +23,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish to NPM
         if: github.ref == 'refs/heads/main'
-        id: changesets-main
+        id: changesetsMain
         uses: changesets/action@v1
         with:
           publish: yarn release
@@ -33,7 +33,7 @@ jobs:
 
       - name: Create Release Pull Request
         if: github.ref == 'refs/heads/dev'
-        id: changesets-dev
+        id: changesetsDev
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
