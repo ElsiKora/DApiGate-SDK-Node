@@ -1,5 +1,11 @@
 # @elsikora/dapigate-sdk-node
 
+## 1.1.0
+
+### Minor Changes
+
+- 156f0c9: Update dependencies and build script
+
 ## 1.0.1
 
 ### Patch Changes
