@@ -8,7 +8,7 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
   release:
-    name: Release and Publish
+    name: Release and Publish to NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -22,11 +22,19 @@ jobs:
         run: yarn
 
       - name: Create Release Pull Request or Publish to NPM
+        if: github.ref == 'refs/heads/main'
         id: changesets
         uses: changesets/action@v1
-        if: github.ref == 'refs/heads/main'
         with:
           publish: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create Release Pull Request
+        if: github.ref == 'refs/heads/dev'
+        id: changesets
+        uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
