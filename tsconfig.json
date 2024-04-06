@@ -2,11 +2,11 @@
   "compilerOptions": {
     "declaration": true,
     "target": "ES6",
-    "module": "commonjs",
+    "module": "NodeNext",
     "noImplicitAny": true,
     "outDir": "dist",
     "rootDir": "./src",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "typeRoots": [
       "node_modules/@types"
     ]
