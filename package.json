@@ -5,13 +5,11 @@
   },
   "dependencies": {
     "@changesets/cli": "^2.27.1",
-    "axios": "^1.6.8",
-    "rimraf": "^5.0.5"
+    "axios": "^1.6.8"
   },
   "devDependencies": {
     "@elsikora/eslint-config": "^2.0.7",
-    "@swc/cli": "^0.3.12",
-    "@swc/core": "^1.4.12",
+    "minimatch": "^3.1.2",
     "typescript": "^5.4.3"
   },
   "description": "Node SDK for DApiGate",
@@ -39,7 +37,7 @@
     "url": "git+ssh://git@github.com/ElsiKora/DApiGate-SDK-Node.git"
   },
   "scripts": {
-    "build": "swc src -d dist && mv ./dist/src/* ./dist && rimraf ./dist/src",
+    "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.json\" \".github/**/*.yml\"",
     "lint": "eslint ./src --ext .ts,.tsx,.json,.yml --fix && eslint ./*.json --fix",
     "patch": "npx changeset",
