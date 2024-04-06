@@ -11,7 +11,7 @@
  */
 
 // Some imports not used depending on template conditions
-// @ts-ignore
+
 import globalAxios from "axios";
 
 import type { Configuration } from "./configuration";

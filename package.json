@@ -37,7 +37,7 @@
     "url": "git+ssh://git@github.com/ElsiKora/DApiGate-SDK-Node.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "TSX_COMPILE_ON_ERROR=true ESLINT_NO_DEV_ERRORS=true tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.json\" \".github/**/*.yml\"",
     "lint": "eslint ./src --ext .ts,.tsx,.json,.yml --fix && eslint ./*.json --fix",
     "patch": "npx changeset",
