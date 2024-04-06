@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "@elsikora/eslint-config": "^2.1.2",
-    "@types/node": "^20.12.5",
     "typescript": "^5.4.4"
   },
   "description": "Node SDK for DApiGate",
@@ -27,7 +26,7 @@
   ],
   "license": "MIT",
   "name": "@elsikora/dapigate-sdk-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
