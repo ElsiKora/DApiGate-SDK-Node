@@ -18,10 +18,8 @@ import { assertParamExists as assertParameterExists, createRequestFunction, DUMM
 import type { RequestArguments } from "./base";
 import type { Configuration } from "./configuration";
 import type { AxiosInstance, AxiosPromise, RawAxiosRequestConfig } from "axios";
-// Some imports not used depending on template conditions
-// @ts-ignore
 
-// @ts-ignore
+// Some imports not used depending on template conditions
 
 /**
  *
