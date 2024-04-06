@@ -1,0 +1,49 @@
+{
+  "author": "ElsiKora",
+  "bugs": {
+    "url": "https://github.com/ElsiKora/DApiGate-SDK-Node/issues"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "@elsikora/eslint-config": "^2.1.2",
+    "@types/node": "^20.12.5",
+    "typescript": "^5.4.4"
+  },
+  "description": "Node SDK for DApiGate",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/ElsiKora/DApiGate-SDK-Node#readme",
+  "keywords": [
+    "sdk",
+    "openapi",
+    "client",
+    "rest",
+    "api",
+    "node"
+  ],
+  "license": "MIT",
+  "name": "@elsikora/dapigate-sdk-node",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ElsiKora/DApiGate-SDK-Node.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.json\" \".github/**/*.yml\"",
+    "lint": "eslint ./src --ext .ts,.tsx,.json,.yml --fix && eslint ./*.json --fix",
+    "patch": "npx changeset",
+    "patch:release": "npx changeset version",
+    "prebuild": "rimraf dist",
+    "release": "npm install && npm run build && changeset publish"
+  },
+  "types": "dist/index.d.ts"
+}
