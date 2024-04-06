@@ -26,7 +26,7 @@
   ],
   "license": "MIT",
   "name": "@elsikora/dapigate-sdk-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
