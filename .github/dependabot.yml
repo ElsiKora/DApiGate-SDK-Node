@@ -4,17 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    target-branch: "main"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    target-branch: "main"
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
     target-branch: "dev"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
